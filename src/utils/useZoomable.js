@@ -1,3 +1,5 @@
+import {useEffect} from 'react';
+
 const getPointerPosition = event => {
 	if (event.offsetX) {
 		return {offsetX: event.offsetX, offsetY: event.offsetY};
@@ -8,7 +10,14 @@ const getPointerPosition = event => {
 	};
 };
 
-const zoomable = (viewBox, setViewBox) => {
+const useZoomable = (viewBox, setViewBox, svg) => {
+	useEffect(() => {
+		svg.current.addEventListener('wheel', e => e.preventDefault(), {
+			passive: false,
+		});
+		return svg.current.removeEventListener('wheel', e => e.preventDefault());
+	}, []);
+
 	const {x, y, width, height} = viewBox;
 
 	const handleZoom = scale => {
@@ -54,4 +63,4 @@ const zoomable = (viewBox, setViewBox) => {
 	return [handleZoom, handleWheel];
 };
 
-module.exports = zoomable;
+export default useZoomable;

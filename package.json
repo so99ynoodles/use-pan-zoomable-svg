@@ -1,7 +1,7 @@
 {
-	"name": "use-zoomable-svg",
-	"version": "1.0.2",
-	"description": "Easily create zoomable svg for react",
+	"name": "use-pan-zoomable-svg",
+	"version": "1.0.0",
+	"description": "Easily create pan zoomable svg for react",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,8 @@
 		"hooks",
 		"svg",
 		"zoomable",
-		"draggable"
+		"draggable",
+		"pan"
 	],
 	"author": "Taiki Ikeda <so99ynoodles@gmail.com> (http://github.com/so99ynoodles)",
 	"license": "MIT",

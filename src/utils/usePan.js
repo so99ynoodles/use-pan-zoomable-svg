@@ -18,9 +18,9 @@ const createMouseDownFunction = (viewBox, setViewBox) => event => {
 	);
 };
 
-const draggable = (viewBox, setViewBox) => {
+const usePan = (viewBox, setViewBox) => {
 	const handleMouseDown = createMouseDownFunction(viewBox, setViewBox);
 	return handleMouseDown;
 };
 
-module.exports = draggable;
+module.exports = usePan;

@@ -2,7 +2,7 @@ const {useState} = require('react');
 const draggable = require('./src/utils/draggable');
 const zoomable = require('./src/utils/zoomable');
 
-const useZoomableSVG = ({initialViewBox}) => {
+const usePanZoomableSVG = ({initialViewBox}) => {
 	const [{x, y, width, height}, setViewBox] = useState(initialViewBox);
 	const handleMouseDown = draggable({x, y, width, height}, setViewBox);
 	const [handleZoom, handleWheel] = zoomable({x, y, width, height}, setViewBox);
@@ -17,4 +17,4 @@ const useZoomableSVG = ({initialViewBox}) => {
 	};
 };
 
-module.exports = useZoomableSVG;
+module.exports = usePanZoomableSVG;
