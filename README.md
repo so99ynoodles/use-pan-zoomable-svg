@@ -1,13 +1,17 @@
-# use-zoomable-svg
+# use-pan-zoomable-svg
 
 `Easily create zoomable svg for react.`
+
+Preparing for npm publish & TS support
 
 
 ## How to use
 
+![use-pan-zoomable-svg](https://thumbs.gfycat.com/DimwittedSpiffyAmericanmarten-small.gif)
+
 ```react.jsx
 import React from 'react';
-import useZoomableSVG from './useZoomableSVG';
+import usePanZoomableSVG from 'use-pan-zoomableSVG';
 
 const initialViewBox = {
  x: -100,
