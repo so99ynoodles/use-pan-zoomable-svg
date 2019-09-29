@@ -1,0 +1,25 @@
+{
+	"name": "use-zoomable-svg",
+	"version": "1.0.0",
+	"description": "Easily create zoomable svg for react",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"react",
+		"hooks",
+		"svg",
+		"zoomable",
+		"draggable"
+	],
+	"author": "Taiki Ikeda <so99ynoodles@gmail.com> (http://github.com/so99ynoodles)",
+	"license": "MIT",
+	"dependencies": {
+		"react": "^16.10.1"
+	},
+	"bugs": {
+		"url": "https://github.com/so99ynoodles/use-zoomable-svg/issues"
+	},
+	"homepage": "https://github.com/so99ynoodles/use-zoomable-svg"
+}
