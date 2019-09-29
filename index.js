@@ -1,6 +1,6 @@
 const {useState} = require('react');
-const draggable = require('./utils/draggable');
-const zoomable = require('./zoomable');
+const draggable = require('./src/utils/draggable');
+const zoomable = require('./src/utils/zoomable');
 
 const useZoomableSVG = ({initialViewBox}) => {
 	const [{x, y, width, height}, setViewBox] = useState(initialViewBox);
