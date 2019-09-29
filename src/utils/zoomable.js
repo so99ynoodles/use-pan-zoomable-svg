@@ -54,4 +54,4 @@ const zoomable = (viewBox, setViewBox) => {
 	return [handleZoom, handleWheel];
 };
 
-export default zoomable;
+module.exports = zoomable;

@@ -23,4 +23,4 @@ const draggable = (viewBox, setViewBox) => {
 	return handleMouseDown;
 };
 
-export default draggable;
+module.exports = draggable;

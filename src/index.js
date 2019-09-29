@@ -1,6 +1,6 @@
-import {useState} from 'react';
-import draggable from './utils/draggable';
-import zoomable from './zoomable';
+const {useState} = require('react');
+const draggable = require('./utils/draggable');
+const zoomable = require('./zoomable');
 
 const useZoomableSVG = ({initialViewBox}) => {
 	const [{x, y, width, height}, setViewBox] = useState(initialViewBox);
@@ -17,4 +17,4 @@ const useZoomableSVG = ({initialViewBox}) => {
 	};
 };
 
-export default useZoomableSVG;
+module.exports = useZoomableSVG;
