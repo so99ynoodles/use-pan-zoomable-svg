@@ -1,6 +1,6 @@
 # use-pan-zoomable-svg
 
-`Easily create zoomable svg for react.`
+`Create pan & zoomable svg for react easily.`
 
 Preparing for npm publish & TS support
 
