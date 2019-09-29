@@ -2,15 +2,6 @@
 
 `Easily create zoomable svg for react.`
 
-## Get Started
-
-```console
-npm i use-zoomable-svg
-```
-or
-```console
-yarn add use-zoomable-svg
-```
 
 ## How to use
 View Demo
