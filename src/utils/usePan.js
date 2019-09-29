@@ -23,4 +23,4 @@ const usePan = (viewBox, setViewBox) => {
 	return handleMouseDown;
 };
 
-module.exports = usePan;
+export default usePan;
