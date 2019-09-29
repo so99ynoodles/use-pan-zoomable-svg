@@ -4,7 +4,6 @@
 
 
 ## How to use
-View Demo
 
 ```react.jsx
 import React from 'react';
