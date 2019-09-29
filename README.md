@@ -10,7 +10,7 @@ Preparing for npm publish & TS support
 ![use-pan-zoomable-svg](https://thumbs.gfycat.com/DimwittedSpiffyAmericanmarten-small.gif)
 
 ```react.jsx
-import React from 'react';
+import React, { useRef } from 'react';
 import usePanZoomableSVG from 'use-pan-zoomableSVG';
 
 const initialViewBox = {
@@ -21,6 +21,7 @@ const initialViewBox = {
 };
 
 const App = () => {
+ const svg = useRef();
  const {
   viewBox,
   handleZoom,
@@ -31,6 +32,7 @@ const App = () => {
  return (
   <div>
    <svg
+    ref={svg}
     onMouseDown={handleMouseDown}
     onWheel={handleWheel}
     viewBox={viewBox}
