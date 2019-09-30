@@ -22,7 +22,7 @@ const initialViewBox = {
 
 const App = () => {
  const svg = useRef();
- const { width, height} = initialViewBox;
+ const { width, height } = initialViewBox;
  const {
   viewBox,
   handleZoom,
