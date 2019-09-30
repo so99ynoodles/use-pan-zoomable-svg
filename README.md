@@ -11,7 +11,7 @@ Preparing for npm publish & TS support
 
 ```react.jsx
 import React, { useRef } from 'react';
-import usePanZoomableSVG from 'use-pan-zoomableSVG';
+import usePanZoomableSVG from 'use-pan-zoomable-svg';
 
 const initialViewBox = {
  x: -100,
