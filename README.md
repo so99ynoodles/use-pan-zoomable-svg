@@ -22,6 +22,7 @@ const initialViewBox = {
 
 const App = () => {
  const svg = useRef();
+ const { width, height} = initialViewBox;
  const {
   viewBox,
   handleZoom,
@@ -36,8 +37,8 @@ const App = () => {
     onMouseDown={handleMouseDown}
     onWheel={handleWheel}
     viewBox={viewBox}
-    width="200"
-    height="200"
+    width={width}
+    height={height}
    >
     <circle cx="0" cy="0" r="20"></circle>
    </svg>
