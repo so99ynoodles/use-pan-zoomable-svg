@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import usePan from './src/utils/usePan';
-import useZoomable from './src/utils/useZoomable';
+import usePan from './utils/usePan';
+import useZoomable from './utils/useZoomable';
 
 const usePanZoomableSVG = ({
 	initialViewBox = {
