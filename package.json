@@ -22,7 +22,8 @@
 		"url": "https://github.com/so99ynoodles/use-zoomable-svg/issues"
 	},
 	"dependencies": {
-		"@babel/polyfill": "^7.6.0"
+		"@babel/polyfill": "^7.6.0",
+		"core-js": "2"
 	},
 	"homepage": "https://github.com/so99ynoodles/use-zoomable-svg",
 	"devDependencies": {
