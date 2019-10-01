@@ -16,9 +16,9 @@ const useZoomable = (viewBox, setViewBox, svg) => {
 			passive: false,
 		});
 		return svg.current.removeEventListener('wheel', e => e.preventDefault());
-	}, []);
+	}, [svg]);
 
-	const {x, y, width, height} = viewBox;
+	const {x, y, width, height, currentScale} = viewBox;
 
 	const handleZoom = scale => {
 		const centerX = x + width / 2;
@@ -33,6 +33,7 @@ const useZoomable = (viewBox, setViewBox, svg) => {
 			height: zoomedHeight,
 			x: zoomedX,
 			y: zoomedY,
+			currentScale: currentScale / scale,
 		});
 	};
 
@@ -57,6 +58,7 @@ const useZoomable = (viewBox, setViewBox, svg) => {
 			height: scaledHeight,
 			x: scaledX,
 			y: scaledY,
+			currentScale: currentScale / scale,
 		});
 	};
 
