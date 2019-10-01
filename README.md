@@ -2,10 +2,14 @@
 
 `Create pan & zoomable svg for react easily.`
 
-Preparing for npm publish & TS support
+## Get Started!
+
+`npm install use-pan-zoomable-svg`
+or
+`yarn add use-pan-zoomable-svg`
 
 
-## How to use
+## How to use ([View Demo](https://codesandbox.io/s/use-pan-zoomable-svg-gb7su))
 
 ![use-pan-zoomable-svg](https://thumbs.gfycat.com/DimwittedSpiffyAmericanmarten-small.gif)
 
@@ -18,6 +22,7 @@ const initialViewBox = {
  y: -100,
  width: 200,
  height: 200,
+ scale: 1
 };
 
 const App = () => {
