@@ -4,16 +4,16 @@ import useZoomable from './src/utils/useZoomable';
 
 const usePanZoomableSVG = ({
 	initialViewBox = {
-		currentScale: 1,
+		scale: 1,
 	},
 	svg,
 }) => {
 	const [{x, y, width, height, currentScale}, setViewBox] = useState({
-		x: initialViewBox.x / initialViewBox.currentScale,
-		y: initialViewBox.y / initialViewBox.currentScale,
-		height: initialViewBox.height / initialViewBox.currentScale,
-		width: initialViewBox.width / initialViewBox.currentScale,
-		currentScale: initialViewBox.currentScale,
+		x: initialViewBox.x / initialViewBox.scale,
+		y: initialViewBox.y / initialViewBox.scale,
+		height: initialViewBox.height / initialViewBox.scale,
+		width: initialViewBox.width / initialViewBox.scale,
+		currentScale: initialViewBox.scale,
 	});
 	const handleMouseDown = usePan(
 		{x, y, width, height, currentScale},
@@ -33,7 +33,7 @@ const usePanZoomableSVG = ({
 		handleWheel,
 		handleZoom,
 		reset,
-		currentScale,
+		scale: currentScale,
 	};
 };
 
