@@ -1,11 +1,18 @@
 # use-pan-zoomable-svg
 
 `Create pan & zoomable svg for react easily.`
+Use it to implement SVG based features like Org chart.
 
-Preparing for npm publish & TS support
+## Get Started!
+
+`npm install use-pan-zoomable-svg`
+
+or
+
+`yarn add use-pan-zoomable-svg`
 
 
-## How to use
+## How to use ([View Demo](https://codesandbox.io/s/use-pan-zoomable-svg-gb7su))
 
 ![use-pan-zoomable-svg](https://thumbs.gfycat.com/DimwittedSpiffyAmericanmarten-small.gif)
 
@@ -18,6 +25,7 @@ const initialViewBox = {
  y: -100,
  width: 200,
  height: 200,
+ scale: 1
 };
 
 const App = () => {
@@ -50,3 +58,13 @@ const App = () => {
 };
 
 ```
+
+## Props
+
+All props below are required.
+
+- `x`: set minimum x of the viewBox
+- `y`: set minimum y of the viewBox
+- `width`: set width of the viewBox
+- `height`: set height of the viewBox
+- `scale`: default scale of the SVG
