@@ -2,7 +2,7 @@
 	"name": "use-pan-zoomable-svg",
 	"version": "1.0.3",
 	"description": "Easily create pan zoomable svg for react",
-	"main": "index.js",
+	"main": "lib/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"babel": "node_modules/.bin/babel src --out-dir lib",
@@ -19,6 +19,7 @@
 	"author": "Taiki Ikeda <so99ynoodles@gmail.com> (http://github.com/so99ynoodles)",
 	"license": "MIT",
 	"dependencies": {
+		"@babel/polyfill": "^7.6.0",
 		"react": "^16.10.1"
 	},
 	"bugs": {
