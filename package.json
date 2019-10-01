@@ -21,12 +21,14 @@
 	"bugs": {
 		"url": "https://github.com/so99ynoodles/use-zoomable-svg/issues"
 	},
+	"dependencies": {
+		"@babel/polyfill": "^7.6.0"
+	},
 	"homepage": "https://github.com/so99ynoodles/use-zoomable-svg",
 	"devDependencies": {
 		"@babel/cli": "^7.6.2",
 		"@babel/core": "^7.6.2",
 		"@babel/preset-env": "^7.6.2",
-		"@babel/polyfill": "^7.6.0",
 		"react": "^16.10.1"
 	}
 }
