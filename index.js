@@ -2,7 +2,12 @@ import {useState} from 'react';
 import usePan from './src/utils/usePan';
 import useZoomable from './src/utils/useZoomable';
 
-const usePanZoomableSVG = ({initialViewBox, svg}) => {
+const usePanZoomableSVG = ({
+	initialViewBox = {
+		currentScale: 1,
+	},
+	svg,
+}) => {
 	const [{x, y, width, height, currentScale}, setViewBox] = useState({
 		x: initialViewBox.x / initialViewBox.currentScale,
 		y: initialViewBox.y / initialViewBox.currentScale,
