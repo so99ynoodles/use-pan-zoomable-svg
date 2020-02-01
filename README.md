@@ -38,7 +38,7 @@ const App = () => {
   handleTouchStart,
   handleWheel,
   reset,
- } = usePanZoomableSVG({initialViewBox});
+ } = usePanZoomableSVG({initialViewBox, svg});
  return (
   <div>
    <svg
