@@ -35,14 +35,16 @@ const App = () => {
   viewBox,
   handleZoom,
   handleMouseDown,
+  handleTouchStart,
   handleWheel,
   reset,
- } = useZoomableSVG({initialViewBox});
+ } = usePanZoomableSVG({initialViewBox, svg});
  return (
   <div>
    <svg
     ref={svg}
     onMouseDown={handleMouseDown}
+    onTouchStart={handleTouchStart}
     onWheel={handleWheel}
     viewBox={viewBox}
     width={width}
@@ -68,3 +70,11 @@ All props below are required.
 - `width`: set width of the viewBox
 - `height`: set height of the viewBox
 - `scale`: default scale of the SVG
+
+## returned values
+- `viewBox`: set it to your svg's prop `viewBox`.
+- `handleZoom`: you can manually zoom your svg component by setting a number.
+- `reset`: reset your svg to initial view.
+- `handleMouseDown`: set it to your svg's prop `onMouseDown`.
+- `handleTouchStart`: set it to your svg's prop `onTouchStart`.
+- `handleWheel`: set it to your svg's prop `onWheel`.
